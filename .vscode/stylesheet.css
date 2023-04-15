@@ -1,0 +1,51 @@
+h1{
+    background-color:   gray;
+    border: 3px solid white;
+    height: 35px;
+    width: 160px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.createStyle {
+    border: 3px solid;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    height: 370px;
+    width: 220px;
+    background-color: white; 
+    /*rgb(182, 178, 178);*/
+  }
+  #cal{  
+    width: 150px;  
+    border: 3px solid black;  
+        border-radius: 5px;  
+        padding: 10px;  
+        margin: auto;  
+    }
+    input  
+{  
+width: 50px;  
+background-color:gray;  
+color: white;  
+border: 2px solid gray;  
+    border-radius: 15px;  
+    padding: 13px;   
+    font-size: 15px;  
+}  
+#clear{
+    width: 50px;
+    font-size: px;
+    padding: 10px;
+    margin: 1px;
+    background-color: red;
+    border: red;
+}
+  
+#backspace{
+    width: 90px;
+    padding: 10px;
+    margin: 1px;
+}

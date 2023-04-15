@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my calculator</title>
+    <style>
+        .calculator {
+            text-align: center;
+            border: 5px solid black;
+            margin: auto;
+            height: 380px;
+            width: 500px;
+            padding: 20px;
+            /* padding: 3em 2em 3em 2em; */
+        }
+
+        .displaybox {
+           width: 100%;
+           padding: 10px;
+           
+        }
+
+        input[type=button] {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #64278f;
+            color: white;
+            border: solid black 0.5px;
+            width: 10%;
+            border-radius: 2px;
+            height: 7%;
+            outline: none;
+        }
+
+        input:active[type=button] {
+            background: #e5e5e5;
+            -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+            -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+
+        <input type="text" id="answer" name="calc" class="displaybox">
+        <br>
+        <br>
+        <input type="button" value=1 onclick="display('1')">
+        <input type="button" value="2" onclick="display('2')">
+        <input type="button" value="3" onclick="display('3')">
+        <input type="button" value="+" onclick="display('+')">
+        <br>
+        <br>
+        <input type="button" value="4" onclick="display('4')">
+        <input type="button" value="5" onclick="display('5')">
+        <input type="button" value="6" onclick="display('6')">
+        <input type="button" value="-" onclick="display('-')">
+        <br>
+        <br>
+        <input type="button" value="7" onclick="display('7')">
+        <input type="button" value="8" onclick="display('8')">
+        <input type="button" value="9" onclick="display('9')">
+        <input type="button" value="/" onclick="display('/')">
+        <br>
+        <br>
+        <input type="button" value="." onclick="display('.')">
+        <input type="button" value="0" onclick="display('0')">
+        <input type="button" value="=" onclick="calculate()" id="eval">
+        <input type="button" value="*" onclick="display('*')">
+        <br>
+        <br>
+        <input type="button" id="clear" value="clear" onClick="clearAll()">
+
+    </div>
+    <script>
+        function clearAll() {
+            document.getElementById("answer").value = "";
+        }
+        function display(value) {
+            document.getElementById("answer").value += value;
+        }
+        function calculate() {
+            var p = document.getElementById("answer").value;
+            var q = eval(p);
+            document.getElementById("answer").value = q;
+        }
+    </script>
+</body>
+
+</html>

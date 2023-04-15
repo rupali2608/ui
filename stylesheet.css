@@ -1,0 +1,19 @@
+
+    fieldset{
+    border: solid black 5px;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    background-color: white;
+}
+.content {
+    max-width: 500px;
+    margin: auto;
+  }
+  body{
+    background-color: #e5e4d7;
+  }
+  h1{
+    color: rgb(175, 111, 175);
+    font-size: 40px;
+  }
+  

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>count App</title>
+        <script>
+            let count = 0
+            function increment(){
+                const countEle= document.getElementById("countId");
+                count+=1;
+                countEle.innerHTML=count;
+            }
+            function decrement(){
+                const countEle = document.getElementById("countId");
+                if(count!==0){
+                count-=1;
+                countEle.innerHTML=count;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>count : <label id="countId">0</label></div>
+        <br>
+        <button onclick="increment()">increment</button>
+        <br>
+        <button onclick="decrement()">decrement</button>
+        <br>
+    </body>
+</html>

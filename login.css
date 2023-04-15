@@ -1,0 +1,63 @@
+.homePage{
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-size: 50px;
+    
+}
+h2{
+    font-size: 40px;
+    padding-left: 50px;
+}
+label{
+    padding-left: 50px;
+}
+#address{
+    font-size: 20px;
+    padding: 10px;
+}
+#findfood{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(207, 77, 77);
+    color: white;
+}
+a{
+    font-size: 20px;
+    color: white;
+    padding-left: 50px;
+}
+span{
+    font-size: 20px;
+    color: white;
+}
+#name {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#button {
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 3px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 325px;
+}
+
+div {
+    margin: auto;
+    margin-top: 180px;
+    background-color: white;
+}
+#password {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
