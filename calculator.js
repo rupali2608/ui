@@ -7,8 +7,9 @@ switch(opName)
 {
     case "Add":
        let z=a+b;
-        
+       console.log(a);
        console.log("The result is -" +z);
        break;
+
 }
 
